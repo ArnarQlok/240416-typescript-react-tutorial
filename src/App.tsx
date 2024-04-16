@@ -3,12 +3,11 @@ import { useState } from "react";
 import "./App.css";
 import Button from "./Button";
 import FunctionAsProps from "./FunctionAsProps";
+import StateAsProps from "./StateAsProps";
 
 function App() {
   const [count, setCount] = useState(0);
   const [input, setInput] = useState("");
-
-  const [user, setUser] = useState(null);
 
   const handleClick = (test: string) => {
     return 5;
@@ -23,7 +22,8 @@ function App() {
         color="black"
         padding={[20, 40]}
       /> */}
-      <FunctionAsProps handleClick={handleClick} />
+      {/* <FunctionAsProps handleClick={handleClick} /> */}
+      <StateAsProps count={count} setCount={setCount} />
     </>
   );
 }
