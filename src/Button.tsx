@@ -1,6 +1,4 @@
-import React from "react";
-
-type Color = "red" | "blue" | "green" | "black" | "purple";
+import { Color } from "./types/types";
 
 type ButtonProps = {
   backgroundColor: Color;

@@ -4,6 +4,7 @@ import "./App.css";
 import Button from "./Button";
 import FunctionAsProps from "./FunctionAsProps";
 import StateAsProps from "./StateAsProps";
+import ChildrenAsProps from "./ChildrenAsProps";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +24,8 @@ function App() {
         padding={[20, 40]}
       /> */}
       {/* <FunctionAsProps handleClick={handleClick} /> */}
-      <StateAsProps count={count} setCount={setCount} />
+      {/* <StateAsProps count={count} setCount={setCount} /> */}
+      <ChildrenAsProps>Hej hallå</ChildrenAsProps>
     </>
   );
 }

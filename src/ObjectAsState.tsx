@@ -1,9 +1,5 @@
 import { useState } from "react";
-
-type User = {
-  name: string;
-  age: number;
-};
+import { type User } from "./types/types";
 
 const Button = () => {
   const [user, setUser] = useState<User | null>(null);
